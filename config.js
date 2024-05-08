@@ -10,22 +10,22 @@ var config = {
     theme: 'dark',
     use3dTerrain: true, //set true for enabling 3D maps.
     auto: false,
-    title: 'Glacial Risks',
-    subtitle: 'Test',
-    byline: 'By a Digital Storyteller',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    title: '',
+    subtitle: '',
+    byline: '',
+    footer: 'Source: White glaciers: Rabatel, A. Glacial lakes: Gardent, M. Permafrost: Alpine Permafrost Index Map (APIM).',
     chapters: [
             {
             id: 'marmolada',
-            alignment: 'left',
+            alignment: 'center',
             hidden: false,
             title: '',
-            image: '"images\marmolada.png"',
-            description: 'Scientists did an inventory of glaciers.',
+            image: '',
+            description: 'Estimating glacial risks requires knowing well the territory',
             location: {
-                center: [11.86036, 46.43050],
-                zoom: 12.88,
-                pitch: 45.00,
+                center: [5.83509, 45.44185],
+                zoom: 8.10,
+                pitch: 0.00,
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
@@ -35,12 +35,17 @@ var config = {
                  {
                      layer: 'glacier-2022',
                      opacity: 0,
-                     duration: 5000
+                     duration:0 
+                 },
+                {
+                     layer: 'lacs-glaciaires',
+                     opacity: 0,
+                     duration: 0
                  }
             ],
             onChapterExit: [
                  {
-                     layer: 'glacier-2022',
+                     layer: 'lacs-glaciaires',
                      opacity: 0
                  }
             ]
@@ -49,13 +54,13 @@ var config = {
             id: 'ice_avalanche',
             alignment: 'left',
             hidden: false,
-            title: 'Chapitre1',
-            image: './path/to/image/source.png',
-            description: 'Scientists did an inventory of glaciers.',
+            title: '',
+            image: '',
+            description: '... meaning precisely mapping glaciers,...',
             location: {
-                center: [6.68754, 44.79062],
-                zoom: 7.73,
-                pitch: 45.00,
+                center: [5.83509, 45.44185],
+                zoom: 8.10,
+                pitch: 0.00,
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
@@ -65,7 +70,7 @@ var config = {
                  {
                      layer: 'glacier-2022',
                      opacity: 1,
-                     duration: 5000
+                     duration: 100
                  }
             ],
             onChapterExit: [
@@ -77,14 +82,14 @@ var config = {
         },
         {
             id: 'second-identifier',
-            alignment: 'right',
+            alignment: 'left',
             hidden: false,
-            title: 'Second Title',
-            image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            title: '',
+            image: '',
+            description: '...glacial lakes...',
             location: {
-                center: [6.68754, 44.79062],
-                zoom: 7.73,
+                center: [5.83509, 45.24185],
+                zoom: 8.1,
                 pitch: 45.00,
                 bearing: 0.00,
                 // flyTo additional controls-
@@ -95,19 +100,20 @@ var config = {
                 //curve: 1, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [
                  {
-                     layer: 'glacier-2022',
-                     opacity: 0,
-                     duration: 50
+                     layer: 'lacs-glaciaires',
+                     opacity: 1,
+                     duration: 100
                  }
             ],
             onChapterExit: [
                  {
-                     layer: 'glacier-2022',
-                     opacity: 0
+                     layer: 'lacs-glaciaires',
+                     opacity: 0,
+                     duration: 0
                  }
             ]
         },
@@ -117,11 +123,11 @@ var config = {
             hidden: false,
             title: 'Third Title',
             image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            description: '... and permafrost',
             location: {
-                center: [6.15116, 46.20595],
-                zoom: 12.52,
-                pitch: 8.01,
+                center: [5.83509, 45.24185],
+                zoom: 8.1,
+                pitch: 0,
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
@@ -138,8 +144,8 @@ var config = {
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
             location: {
-                center: [-58.54195, -34.71600],
-                zoom: 4,
+                center: [5.83509, 45.24185],
+                zoom: 8.1,
                 pitch: 0,
                 bearing: 0
             },
