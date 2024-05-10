@@ -93,8 +93,8 @@ var config = {
             image: '',
             description: '...glacial lakes...',
             location: {
-                center: [5.83509, 45.44185],
-                zoom: 7.9,
+                center: [6.31168, 45.15837],
+                zoom: 9.1,
                 pitch: 15.00,
                 bearing: 0.00,
                 // flyTo additional controls-
