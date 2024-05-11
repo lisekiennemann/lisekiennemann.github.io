@@ -1,19 +1,19 @@
 var config = {
     style: 'mapbox://styles/lisekiennemann/clvwv4yal00r401pfh91s9xzc',
     accessToken: 'pk.eyJ1IjoibGlzZWtpZW5uZW1hbm4iLCJhIjoiY2x2d3V4NGwyMmFwNjJsbWhkbXkwZGx4byJ9.98B-dhTS09_Tb_owH_F7zg',
-    showMarkers: false,
+    showMarkers: true,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
-    inset: false,
-    theme: 'light',
+    inset: true,
+    theme: 'dark',
     use3dTerrain: true, //set true for enabling 3D maps.
     auto: false,
     title: '',
     subtitle: '',
     byline: '',
-    footer: 'Sources: <br>  White glaciers: Rabatel Antoine. | Glacial lakes: Gardent Marie. | Permafrost: Alpine Permafrost Index Map.',
+    footer: 'Source: White glaciers: Rabatel, A. Glacial lakes: Gardent, M. Permafrost: Alpine Permafrost Index Map (APIM).',
     chapters: [
             {
             id: 'marmolada',
@@ -21,11 +21,11 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Scientists and the ONF have worked together to update the then incomplete "inventories" of...',
+            description: 'Estimating glacial risks requires knowing well the territory',
             location: {
                 center: [5.83509, 45.44185],
-                zoom: 7.90,
-                pitch: 15.00,
+                zoom: 8.10,
+                pitch: 0.00,
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
@@ -44,11 +44,6 @@ var config = {
                  }
             ],
             onChapterExit: [
-                            {
-                     layer: 'glacier-2022',
-                     opacity: 1,
-                     duration:0 
-                 },
                  {
                      layer: 'lacs-glaciaires',
                      opacity: 0
@@ -61,11 +56,11 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '...glaciers,...',
+            description: '... meaning precisely mapping glaciers,...',
             location: {
                 center: [5.83509, 45.44185],
-                zoom: 7.9,
-                pitch: 15.00,
+                zoom: 8.10,
+                pitch: 0.00,
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
@@ -93,15 +88,15 @@ var config = {
             image: '',
             description: '...glacial lakes...',
             location: {
-                center: [6.31168, 45.15837],
-                zoom: 9.1,
-                pitch: 15.00,
+                center: [5.83509, 45.24185],
+                zoom: 8.1,
+                pitch: 45.00,
                 bearing: 0.00,
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
                 // to pan.
-                speed: 2, // make the flying slow
+                //speed: 2, // make the flying slow
                 //curve: 1, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
@@ -126,13 +121,13 @@ var config = {
             id: 'third-identifier',
             alignment: 'left',
             hidden: false,
-            title: '',
-            image: '',
-            description: '... and permafrost.',
+            title: 'Third Title',
+            image: './path/to/image/source.png',
+            description: '... and permafrost',
             location: {
-                center: [5.83509, 45.44185],
-                zoom: 7.9,
-                pitch: 15,
+                center: [5.83509, 45.24185],
+                zoom: 8.1,
+                pitch: 0,
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
@@ -141,24 +136,24 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        //{
-            //id: 'fourth-chapter',
-            //alignment: 'fully',
-            //hidden: false,
-            //title: 'Third Title',
-            //image: './path/to/image/source.png',
-            //description: 'Copy these sections to add to your story.',
-            //location: {
-                //center: [5.83509, 45.24185],
-                //zoom: 8.1,
-                //pitch: 0,
-                //bearing: 0
-            //},
-            //mapAnimation: 'flyTo',
-            //rotateAnimation: false,
-            //callback: '',
-            //onChapterEnter: [],
-            //onChapterExit: []
-        //}
+        {
+            id: 'fourth-chapter',
+            alignment: 'fully',
+            hidden: false,
+            title: 'Third Title',
+            image: './path/to/image/source.png',
+            description: 'Copy these sections to add to your story.',
+            location: {
+                center: [5.83509, 45.24185],
+                zoom: 8.1,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        }
     ]
 };

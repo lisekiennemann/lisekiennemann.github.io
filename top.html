@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .frame {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+  .frame-content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: left; /* Centre le contenu */
+  }
+  .frame:nth-child(2) {
+    background: #f0f0f0;
+  }
+  .container {
+    text-align: center; /* Centre le contenu */
+  }
+  .image-group {
+    display: flex; /* Utilise flexbox pour aligner les images côte à côte */
+    justify-content: center; /* Centre les images horizontalement */
+    margin-bottom: 10px; /* Ajoute un espace sous les images pour la légende */
+  }
+  .image-group img {
+    margin-right: 5px; /* Ajoute un espace entre les images */
+    width: 45%; /* Définit une largeur pour les images pour qu'elles s'adaptent à l'espace */
+    height: auto; /* Garde le ratio des images */
+  }
+  .image-group img:last-child {
+    margin-right: 0; /* Supprime la marge droite de la dernière image */
+  }
+  .legend {
+    font-style: italic; /* Style pour la légende */
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Pour centrer l'image si nécessaire */
+    margin: 0 auto; /* Centre l'image horizontalement */
+  }
+  figure {
+    width: 50%;
+    display: block; /* Pour centrer l'image si nécessaire */
+    margin:  auto; /* Centre l'image horizontalement */
+  }
+  figcaption {
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="frame">
+  <div class="frame-content">
+    <p style="font-size: 1.5em;"><strong>“Reactive mode”</strong></p>
+
+    <p style="font-size: 1em;">While a few risks have already been prevented, they have often been identified "by chance", according to the report, showing the importance of tackling the problem more systematically.
+    </p>
+    <p style="font-size: 1em;">In 2021 for instance, an IGE researcher found out about a lake forming at the foot of the Bossons Glacier in the Chamonix Valley. This lake, which had appeared three years earlier, was rapidly growing due to the accelerated melting of the glacier. Only an ice dam was preventing it from flowing down the steep slope leading to the peaceful village of Les Bossons.</p>
+    </p>
+    <p style="font-size: 1em;">Simulations showed that the water and ice wave that could result from an overflow would endanger the hamlet, its school, railway line, and wooden chalets. Scientists alerted the local authorities, which dug a channel in 2023 to preemptively divert the lake’s water towards a neighbouring stream.
+    </p>
+    <p style="font-size: 1em;">Today, the former lake bed is nothing but pebbles. Only a camera installed by the IGE to monitor the glacier's evolution serves as a reminder of the averted danger. 
+    </p>
+    <div class="container">
+        <div class="image-group">
+          <img src="./images/lac_avant.jpg" alt="Première description">
+          <img src="./images/lac_apres.jpg" alt="Deuxième description">
+        </div>
+        <div class="legend">Left: The glacial lake at Les Bossons, July 2023 (© Ludovic Ravanel). Right: the same spot, in May 2024 (©Lise Kiennemann).</div>
+    </div>
+    <p style="font-size: 1em;">This summer, another glacial lake near the Tignes resort will undergo the same draining procedure. "But currently, we often find ourselves in a reactive mode," Ravanel says.
+    <p style="font-size: 1.5em;"><strong>Ongoing research</strong>
+    <p style="font-size: 1em;">The ONF says one of the reasons why assessing systematically the risks takes time is because we still have little understanding of these phenomena. For instance, research has difficulty in predicting the trajectory of pieces of glaciers breaking off, which is crucial to draw up risk maps and constrain urban development.
+    <p style="font-size: 1em;">"The difficulty is that there are very few glacial events and even fewer documented ones. We are facing a lack of data," Gagliardini says.
+    <p style="font-size: 1em;">Located next to the Bossons Glacier, the Taconnaz Glacier is closely monitored by scientists. Its 406 million cubic meters of ice are suspended above the village of Les Houches and its 3,000 permanent inhabitants.
+    <figure>
+        <img src="./images/taconnaz.jpg" alt="The glacial lake at Les Bossons, July 2023 (© Ludovic Ravanel)">
+        <figcaption>The Taconnaz glacier (centre) threatens the downstream village of Les Houches. (Lise Kiennemann).</figcaption>
+    </figure>
+
+  </div>
+</div>
+
+<!-- Les autres frames restent inchangées -->
+
+</body>
+</html>
