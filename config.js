@@ -21,7 +21,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Scientists and the ONF have worked together to update the then incomplete "inventories" of...',
+            description: 'This "doubt-clearing" mission embarked on a large-scale mapping effort,',
             location: {
                 center: [5.83509, 45.44185],
                 zoom: 7.90,
@@ -46,6 +46,11 @@ var config = {
                      layer: 'permafrost',
                      opacity: 0,
                      duration: 0
+                 },
+                                                  {
+                     layer: 'lacs2',
+                     opacity: 0,
+                     duration: 0
                  }
             ],
             onChapterExit: [
@@ -62,6 +67,11 @@ var config = {
                      layer: 'permafrost',
                      opacity: 0,
                      duration: 0
+                 },
+                                                  {
+                     layer: 'lacs2',
+                     opacity: 0,
+                     duration: 0
                  }
             ]
         },
@@ -71,7 +81,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '...glaciers,...',
+            description: 'pinpointing the locations of glaciers,...',
             location: {
                 center: [5.83509, 45.44185],
                 zoom: 7.9,
@@ -103,8 +113,8 @@ var config = {
             image: '',
             description: '...glacial lakes...',
             location: {
-                center: [6.31168, 45.15837],
-                zoom: 9.1,
+                center: [6.31168, 45.35837],
+                zoom: 8.1,
                 pitch: 15.00,
                 bearing: 0.00,
                 // flyTo additional controls-
@@ -122,11 +132,21 @@ var config = {
                      layer: 'lacs-glaciaires',
                      opacity: 1,
                      duration: 100
+                 },
+                                  {
+                     layer: 'lacs2',
+                     opacity: 1,
+                     duration: 100
                  }
             ],
             onChapterExit: [
                  {
                      layer: 'lacs-glaciaires',
+                     opacity: 0,
+                     duration: 0
+                 },
+                                  {
+                     layer: 'lacs2',
                      opacity: 0,
                      duration: 0
                  }
@@ -140,8 +160,8 @@ var config = {
             image: '',
             description: '... and permafrost.',
             location: {
-                center: [5.83509, 45.44185],
-                zoom: 7.9,
+                center: [5.99207, 44.90932],
+                zoom: 7.3,
                 pitch: 15,
                 bearing: 0.00
             },
