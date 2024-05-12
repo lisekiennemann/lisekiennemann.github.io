@@ -114,7 +114,7 @@ var config = {
             description: '...glacial lakes...',
             location: {
                 center: [6.31168, 45.35837],
-                zoom: 8.1,
+                zoom: 7.5,
                 pitch: 15.00,
                 bearing: 0.00,
                 // flyTo additional controls-
@@ -161,7 +161,7 @@ var config = {
             description: '... and permafrost.',
             location: {
                 center: [5.99207, 44.90932],
-                zoom: 7.3,
+                zoom: 7.0,
                 pitch: 15,
                 bearing: 0.00
             },
