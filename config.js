@@ -136,7 +136,7 @@ var config = {
                                   {
                      layer: 'lacs2',
                      opacity: 1,
-                     duration: 100
+                     duration: 0
                  }
             ],
             onChapterExit: [
@@ -160,8 +160,8 @@ var config = {
             image: '',
             description: '<B> ... and permafrost. </B>',
             location: {
-                center: [6.73509, 44.44185],
-                zoom: 6.8,
+                center: [6.73509, 44.84185],
+                zoom: 6.9,
                 pitch: 15,
                 bearing: 0.00
             },
@@ -172,7 +172,7 @@ var config = {
                  {
                      layer: 'permafrost',
                      opacity: 1,
-                     duration: 100
+                     duration: 0
                  }
             ],
             onChapterExit: [
