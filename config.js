@@ -23,8 +23,8 @@ var config = {
             image: '',
             description: 'This "doubt-clearing" mission embarked on a large-scale mapping effort,',
             location: {
-                center: [5.83509, 45.44185],
-                zoom: 7.90,
+                center: [6.73509, 45.44185],
+                zoom: 7.50,
                 pitch: 15.00,
                 bearing: 0.00
             },
@@ -83,8 +83,8 @@ var config = {
             image: '',
             description: 'pinpointing the locations of glaciers,...',
             location: {
-                center: [5.83509, 45.44185],
-                zoom: 7.9,
+                center: [6.71168, 45.35837],
+                zoom: 7.5,
                 pitch: 15.00,
                 bearing: 0.00
             },
@@ -113,7 +113,7 @@ var config = {
             image: '',
             description: '...glacial lakes...',
             location: {
-                center: [6.31168, 45.35837],
+                center: [6.73509, 45.44185],
                 zoom: 7.5,
                 pitch: 15.00,
                 bearing: 0.00,
@@ -160,8 +160,8 @@ var config = {
             image: '',
             description: '... and permafrost.',
             location: {
-                center: [5.99207, 44.90932],
-                zoom: 7.0,
+                center: [6.73509, 45.44185],
+                zoom: 6.5,
                 pitch: 15,
                 bearing: 0.00
             },
