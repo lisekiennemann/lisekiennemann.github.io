@@ -12,7 +12,7 @@ var config = {
     auto: false,
     title: '',
     subtitle: '',
-    byline: '',
+    byline: ' Scroll down to see the data. ',
     footer: 'Sources: <br>  White glaciers: Rabatel Antoine. | Glacial lakes: Gardent Marie. | Permafrost: Alpine Permafrost Index Map.',
     chapters: [
             {
@@ -21,7 +21,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'This "doubt-clearing" mission embarked on a large-scale mapping effort,',
+            description: 'This "doubt-clearing" mission embarked on a large-scale mapping effort.',
             location: {
                 center: [6.73509, 45.44185],
                 zoom: 7.50,
@@ -81,7 +81,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'pinpointing the locations of glaciers,...',
+            description: 'Scientists and the ONF pinpointed the locations of glaciers,...',
             location: {
                 center: [6.71168, 45.35837],
                 zoom: 7.5,
