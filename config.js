@@ -13,7 +13,7 @@ var config = {
     title: '',
     subtitle: '',
     byline: ' Scroll down to see the data. ',
-    footer: 'Sources: <br>  White glaciers: Rabatel Antoine. | Glacial lakes: Gardent Marie. | Permafrost: Alpine Permafrost Index Map.',
+    footer: 'Sources: <br>  White glaciers: Rabatel Antoine. | Glacial lakes: Gardent Marie. | Permafrost: Alpine Permafrost Index Map. <br> Animation: Lise Kiennemann',
     chapters: [
             {
             id: 'marmolada',
@@ -21,7 +21,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'This "doubt-clearing" mission embarked on a large-scale mapping effort.',
+            description: ' <B> This "doubt-clearing" mission embarked on a large-scale mapping effort. </B>',
             location: {
                 center: [6.73509, 45.44185],
                 zoom: 7.50,
@@ -81,9 +81,9 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Scientists and the ONF pinpointed the locations of glaciers,...',
+            description: '<B> Scientists and the ONF pinpointed the locations of glaciers,... </B> ',
             location: {
-                center: [6.71168, 45.35837],
+                center: [6.71168, 45.45837],
                 zoom: 7.5,
                 pitch: 15.00,
                 bearing: 0.00
@@ -111,7 +111,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '...glacial lakes...',
+            description: '<B> ...glacial lakes... </B>',
             location: {
                 center: [6.73509, 45.44185],
                 zoom: 7.5,
@@ -158,10 +158,10 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '... and permafrost.',
+            description: '<B> ... and permafrost. </B>',
             location: {
-                center: [6.73509, 45.44185],
-                zoom: 6.5,
+                center: [6.73509, 44.44185],
+                zoom: 6.8,
                 pitch: 15,
                 bearing: 0.00
             },
