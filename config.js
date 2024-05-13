@@ -21,7 +21,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: ' <B> This "doubt-clearing" mission embarked on a large-scale mapping effort. </B>',
+            description: ' <B> Researchers and the ONF have worked together to update the then-incomplete inventories... </B>',
             location: {
                 center: [6.73509, 45.44185],
                 zoom: 7.50,
@@ -81,7 +81,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<B> Scientists and the ONF pinpointed the locations of glaciers,... </B> ',
+            description: '<B> ...of glaciers,... </B> ',
             location: {
                 center: [6.71168, 45.45837],
                 zoom: 7.5,
