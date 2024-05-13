@@ -13,7 +13,7 @@ var config = {
     title: '',
     subtitle: '',
     byline: ' Scroll down to see the data. ',
-    footer: 'Sources: <br>  White glaciers: Rabatel Antoine. | Glacial lakes: Gardent Marie. | Permafrost: Alpine Permafrost Index Map. <br> Map and animation: Lise Kiennemann',
+    footer: 'Sources: <br>  White glaciers: Rabatel Antoine. | Glacial lakes: Gardent Marie. | Permafrost: Alpine Permafrost Index Map. <br> Animation: Lise Kiennemann',
     chapters: [
             {
             id: 'marmolada',
@@ -158,7 +158,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<B> ... and permafrost. </B>',
+            description: '<B> ...and permafrost. </B>',
             location: {
                 center: [6.73509, 44.84185],
                 zoom: 6.9,
